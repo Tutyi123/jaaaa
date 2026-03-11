@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Az első weboldalam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Az első weboldalam</h1>
+</header>
+
+<main>
+    <img src="kep.jpg" alt="Kép" class="kep">
+
+    <p>Ez egy egyszerű példa weboldal HTML és CSS használatával.</p>
+</main>
+
+<footer>
+    <p>Készítette: Saját nevem - 2026</p>
+</footer>
+
+</body>
+</html>
