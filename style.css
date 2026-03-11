@@ -1,24 +1,55 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    text-align: center;
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+/* fejléc */
+
+header{
+    background:#222;
+    color:white;
+    padding:20px;
+    text-align:center;
 }
 
-.kep {
-    width: 300px;
-    margin: 20px;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
 }
 
-footer {
-    background-color: #eee;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* hero rész */
+
+.hero{
+    background:#4CAF50;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+/* tartalom */
+
+.content{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:200px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* lábléc */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
 }
