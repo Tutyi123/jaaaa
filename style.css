@@ -1,55 +1,105 @@
-body{
-    margin:0;
-    font-family:Arial, sans-serif;
-    background:#f4f4f4;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* fejléc */
-
-header{
-    background:#222;
-    color:white;
-    padding:20px;
-    text-align:center;
+body {
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 10px;
+/* HEADER */
+header {
+    background: #39ff14;
+    color: purple;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-weight: bold;
 }
 
-/* hero rész */
-
-.hero{
-    background:#4CAF50;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
+.plus {
+    font-size: 30px;
 }
 
-/* tartalom */
-
-.content{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    padding:40px;
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 80px;
 }
 
-.card{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    width:200px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+.stones {
+    width: 300px;
 }
 
-/* lábléc */
+.hero-text {
+    margin-left: 80px;
+}
 
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:15px;
+.hero-text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    max-width: 400px;
+    font-size: 14px;
+}
+
+/* RULER */
+.ruler {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.ruler img {
+    width: 80%;
+}
+
+/* TEXT */
+.text-block {
+    padding: 0 80px;
+    margin-bottom: 80px;
+    font-size: 12px;
+}
+
+/* GALLERY */
+.gallery {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 80px 80px;
+}
+
+.gallery img {
+    width: 200px;
+    transition: 0.3s;
+}
+
+/* HOVER BLUR */
+.gallery img:hover {
+    filter: blur(4px);
+}
+
+.gallery-text {
+    max-width: 300px;
+    font-size: 12px;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 80px;
+    color: #ccc;
+}
+
+.footer-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
