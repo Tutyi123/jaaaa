@@ -1,3 +1,4 @@
+/* Alapbeállítások */
 * {
     margin: 0;
     padding: 0;
@@ -5,101 +6,160 @@
 }
 
 body {
-    background: black;
-    color: white;
-    font-family: Arial, sans-serif;
+    background-color: #000; /* Fekete háttér */
+    color: #fff;
+    font-family: 'Arial', sans-serif; /* Használhatsz 'Helvetica' vagy 'Inter' betűtípust is */
+    line-height: 1.4;
+    overflow-x: hidden;
 }
 
-/* HEADER */
-header {
-    background: #39ff14;
-    color: purple;
+/* Zöld Header */
+.main-header {
+    background-color: #39FF14; /* Neon zöld */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
+    align-items: center;
+    color: #800080; /* Lila szöveg a zöldön */
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
-.plus {
-    font-size: 30px;
+.plus-icon {
+    font-size: 2rem;
 }
 
-/* HERO */
+/* Hero szekció */
 .hero {
     display: flex;
-    align-items: center;
-    padding: 80px;
+    padding: 100px 50px;
+    align-items: flex-start;
+    gap: 50px;
 }
 
-.stones {
-    width: 300px;
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
 }
 
 .hero-text {
-    margin-left: 80px;
+    flex: 1;
 }
 
 .hero-text h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-size: 4rem;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
 }
 
-.hero-text p {
+.small-text {
+    font-size: 0.8rem;
     max-width: 400px;
-    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #ccc;
+    font-family: monospace; /* Írógép szerű hatás a kis szövegeknek */
 }
 
-/* RULER */
-.ruler {
+/* Vonalzó szekció */
+.ruler-section {
+    padding: 50px 0;
     text-align: center;
-    margin: 100px 0;
 }
 
-.ruler img {
-    width: 80%;
+.ruler-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
 }
 
-/* TEXT */
-.text-block {
-    padding: 0 80px;
-    margin-bottom: 80px;
-    font-size: 12px;
+/* Teljes szélességű szöveg */
+.full-width-text {
+    padding: 50px;
+    font-size: 0.7rem;
+    font-family: monospace;
+    color: #aaa;
+    max-width: 1200px;
 }
 
-/* GALLERY */
-.gallery {
+/* Galéria szekció */
+.gallery-section {
     display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 0 80px 80px;
+    padding: 50px;
+    gap: 30px;
 }
 
-.gallery img {
-    width: 200px;
-    transition: 0.3s;
+.gallery-grid {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
-/* HOVER BLUR */
-.gallery img:hover {
-    filter: blur(4px);
+.gallery-grid img {
+    width: 100%;
+    filter: grayscale(100%);
+    border: 1px solid #333;
 }
 
-.gallery-text {
-    max-width: 300px;
-    font-size: 12px;
+.side-text {
+    flex: 1;
+    font-size: 0.7rem;
+    font-family: monospace;
+    color: #aaa;
 }
 
-/* FOOTER */
-footer {
-    background: #333;
+/* Footer */
+.main-footer {
+    background-color: #333; /* Sötétszürke lábléc */
+    padding: 40px 50px;
     display: flex;
     justify-content: space-between;
-    padding: 30px 80px;
-    color: #ccc;
+    align-items: center;
+    margin-top: 100px;
 }
 
-.footer-right {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+.footer-left {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.link-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+/* Mobil nézet optimalizálás */
+@media (max-width: 768px) {
+    .hero, .gallery-section {
+        flex-direction: column;
+    }
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
 }
