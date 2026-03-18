@@ -3,68 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banko Denis Portfolio</title>
+    <title>Banko Denis - Portfólió</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="header-content">
-            <span class="logo">Banko Denis #</span>
-            <span class="plus-icon">+</span>
+    <header class="header">
+        <div class="header-container">
+            <span class="logo-text">Banko Denis #</span>
+            <span class="header-icon">+</span>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-image">
-                <img src="123.jpg" alt="Zen stones">
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="stones-container">
+                <img src="assets/stones.jpg" alt="Zen kövek" class="stones-img">
             </div>
-            <div class="hero-text">
-                <h1>LOREM IPSUM<br>DOLOR SIT<br>AMET.</h1>
-                <p class="small-text">
-                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES GRAVIDA. RISUS COMMODO VIVERRA MAECENAS ACCUMSAN LACUS VEL FACILISIS.
-                </p>
-                <p class="small-text">
-                    LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES GRAVIDA. RISUS COMMODO VIVERRA MAECENAS ACCUMSAN LACUS VEL FACILISIS.
-                </p>
+            <div class="hero-text-container">
+                <h1 class="hero-title">LOREM IPSUM DOLOR SIT AMET.</h1>
+                <p class="hero-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
             </div>
         </section>
 
         <section class="ruler-section">
-            <img src="Texturelabs_Film_179M.jpg" alt="Ruler texture" class="ruler-img">
+            <div class="ruler-overlay">
+                <img src="assets/image_0.png" alt="Mérőskála overlay" class="ruler-img">
+            </div>
         </section>
 
-        <section class="full-width-text">
-            <p>
-                LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES GRAVIDA. RISUS COMMODO VIVERRA MAECENAS ACCUMSAN LACUS VEL FACILISIS. LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES GRAVIDA. RISUS COMMODO VIVERRA MAECENAS ACCUMSAN LACUS VEL FACILISIS.
-            </p>
+        <section class="middle-section">
+            <p class="text-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
         </section>
 
         <section class="gallery-section">
-            <div class="gallery-grid">
-                <img src="próba 2.jpg" alt="Art 1">
-                <img src="próba 2.jpg" alt="Art 2">
-                <img src="próba 2.jpg" alt="Art 3">
-            </div>
-            <div class="side-text">
-                <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES GRAVIDA. RISUS COMMODO VIVERRA MAECENAS ACCUMSAN LACUS VEL FACILISIS. LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES GRAVIDA.</p>
+            <div class="gallery-container">
+                <div class="gallery-grid">
+                    <img src="assets/image_1.png" alt="Textúrázott logó variation 1" class="gallery-img">
+                    <img src="assets/image_1.png" alt="Textúrázott logó variation 2" class="gallery-img">
+                    <img src="assets/image_1.png" alt="Textúrázott logó variation 3" class="gallery-img">
+                </div>
+                <div class="gallery-text-block">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="main-footer">
-        <div class="footer-left">Banko Denis #</div>
-        <div class="footer-links">
-            <div class="link-col">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
+    <footer class="footer">
+        <div class="footer-top-container">
+            <div class="footer-left">
+                <span>Banko Denis #</span>
             </div>
-            <div class="link-col">
-                <a href="#">E-mail</a>
-                <a href="#">Behance</a>
+            <div class="footer-right">
+                <div class="footer-social">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="footer-contact">
+                    <a href="#">E-mail</a>
+                    <a href="#">Behance</a>
+                </div>
             </div>
         </div>
+        <div class="footer-bottom-bar"></div>
     </footer>
 
 </body>
